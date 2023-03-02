@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+}
+header {
+    margin: 50px;
+}
+header div {
+    text-align: center;
+
+}
+.div-1 {
+    animation-name: text-1;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: cubic-bezier(0, 1.05, 0, 0.99);
+    animation-iteration-count: infinite; 
+}
+.div-2 {
+    animation-name: text-2;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: cubic-bezier(0.5, 1.11, 0, 0.99);
+    animation-iteration-count: infinite; 
+}
+
+@keyframes text-1 {
+0%   { color:black; font-size: 10px;}
+100% { color:red; top:0px; bottom:0px; font-size: 50px; }
+} 
+@keyframes text-2 {
+    0%   { color:black; font-size: 10px;}
+    100% { color: blue; top:0px; bottom:0px; font-size: 50px; }
+    }
+main div {
+    text-align: center;
+}
+main div img {
+    width: 2px;
+    height: 2px;
+    text-align: center;
+    animation-name: img;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: cubic-bezier(0, 1.05, 0, 0.99);
+    animation-iteration-count: infinite; 
+}
+
+@keyframes img {
+    0%   { width:2px; height:2px;}
+    100% { width: 400px; height: 300px;}
+} 
+    
